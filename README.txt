@@ -31,7 +31,7 @@ slot_energy = {
 		zone_energy
 		zone_energy_physics
 		zone_habitat_hydroponics
-       *Your Zone Here*                <---- Copy this line and add it to the desired Habitat district slot
+      		*Your Zone Here*                <---- Copy this line and add it to the desired Habitat district slot
 unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_unavailable_tech_power_hub_1
