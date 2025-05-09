@@ -2,7 +2,7 @@ slot_habitat_01 = {
 	inline_script = zones/allowed_zones_habitat_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
@@ -13,7 +13,7 @@ slot_habitat_02 = {
 	inline_script = zones/allowed_zones_habitat_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		custom_tooltip = {
