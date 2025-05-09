@@ -1,5 +1,6 @@
 slot_habitat_01 = {
 	inline_script = zones/allowed_zones_habitat_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -11,6 +12,7 @@ slot_habitat_01 = {
 
 slot_habitat_02 = {
 	inline_script = zones/allowed_zones_habitat_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
