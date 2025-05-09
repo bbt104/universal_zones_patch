@@ -1,5 +1,6 @@
 slot_habitat_01 = {
 	inline_script = zones/allowed_zones_habitat_urban
+	inline_script = zones/allowed_zones_crimelord
 	unlock = { # planet scope
 		always = yes
 	}
@@ -7,6 +8,7 @@ slot_habitat_01 = {
 
 slot_habitat_02 = {
 	inline_script = zones/allowed_zones_habitat_urban
+	inline_script = zones/allowed_zones_crimelord
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_unavailable_tech_habitat_2
