@@ -27,7 +27,7 @@ slot_city_01 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
@@ -38,7 +38,7 @@ slot_city_02 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -124,7 +124,7 @@ slot_city_04 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -157,7 +157,7 @@ slot_city_05 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -212,7 +212,7 @@ slot_arcology_urban_01 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		uses_district_set = city_world
@@ -222,7 +222,7 @@ slot_arcology_urban_02 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		uses_district_set = city_world
@@ -314,7 +314,7 @@ slot_cosmogenesis_empty = { #A dummy zone to prevent building into a district th
 slot_resort_01 = {
 	inline_script = zones/allowed_zones_resort
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
@@ -323,7 +323,7 @@ slot_resort_01 = {
 slot_resort_02 = {
 	inline_script = zones/allowed_zones_resort
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		
@@ -348,7 +348,7 @@ slot_resort_02 = {
 slot_resort_attraction_01 = {
 	inline_script = zones/allowed_zones_resort_attractions
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
