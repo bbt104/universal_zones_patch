@@ -25,6 +25,7 @@ slot_city_government = {
 
 slot_city_01 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -36,6 +37,7 @@ slot_city_01 = {
 
 slot_city_02 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -122,6 +124,7 @@ slot_food = {
 ##shattered ring
 slot_city_04 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -155,6 +158,7 @@ slot_city_04 = {
 ##shattered ring
 slot_city_05 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -210,6 +214,7 @@ slot_rw_urban_03 = {
 ##Arcology
 slot_arcology_urban_01 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -220,6 +225,7 @@ slot_arcology_urban_01 = {
 }
 slot_arcology_urban_02 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
@@ -230,9 +236,10 @@ slot_arcology_urban_02 = {
 }
 slot_arcology_urban_03 = {
 	inline_script = zones/allowed_zones_urban
+	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zone/ad_allowed_zones_urban
+	inline_script = zones/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		uses_district_set = city_world
