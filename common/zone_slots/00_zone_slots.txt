@@ -26,6 +26,9 @@ slot_city_government = {
 slot_city_01 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		always = yes
 	}
@@ -34,6 +37,9 @@ slot_city_01 = {
 slot_city_02 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_city_02_prereq
@@ -117,6 +123,9 @@ slot_food = {
 slot_city_04 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_city_03_prereq
@@ -147,6 +156,9 @@ slot_city_04 = {
 slot_city_05 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_city_03_prereq
@@ -199,6 +211,9 @@ slot_rw_urban_03 = {
 slot_arcology_urban_01 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
@@ -206,6 +221,9 @@ slot_arcology_urban_01 = {
 slot_arcology_urban_02 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
@@ -213,6 +231,9 @@ slot_arcology_urban_02 = {
 slot_arcology_urban_03 = {
 	inline_script = zones/allowed_zones_urban
 	inline_script = zones/allowed_zones_crimelord
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
+
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
@@ -292,6 +313,8 @@ slot_cosmogenesis_empty = { #A dummy zone to prevent building into a district th
 #Resort World
 slot_resort_01 = {
 	inline_script = zones/allowed_zones_resort
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
@@ -299,6 +322,8 @@ slot_resort_01 = {
 }
 slot_resort_02 = {
 	inline_script = zones/allowed_zones_resort
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		
@@ -322,6 +347,8 @@ slot_resort_02 = {
 }
 slot_resort_attraction_01 = {
 	inline_script = zones/allowed_zones_resort_attractions
+	#BBT104#
+	inline_script = zone/ad_allowed_zones_urban
 
 	unlock = { # planet scope
 		always = yes
