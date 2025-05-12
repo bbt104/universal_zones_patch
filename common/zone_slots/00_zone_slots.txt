@@ -94,6 +94,9 @@ slot_energy = {
 
 slot_food = {
 	inline_script = zones/allowed_zones_food
+	#bbt104#
+	inline_script = zones/ad_allowed_zones_farming
+
 	unlock = { # planet scope
 	custom_tooltip = {
 		fail_text = zone_unavailable_tech_food_processing_1
