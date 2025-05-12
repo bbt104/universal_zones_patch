@@ -107,6 +107,8 @@ slot_habitat_research = {
 		zone_research_physics
 		zone_research_society
 		zone_research_engineering
+		#bbt104#
+		zone_ad_bastet
     }
 	unlock = { # planet scope
         custom_tooltip = {
