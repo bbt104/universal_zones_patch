@@ -7,7 +7,7 @@
 slot_city_government = {
 	start = zone_default
 
-	include = {
+	included_zone_sets = {
 		zone_default
 	}
 
@@ -25,10 +25,12 @@ slot_city_government = {
 
 slot_city_01 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
+	included_zone_sets = {
+		urban
+	}	
 
 	unlock = { # planet scope
 		always = yes
@@ -37,10 +39,12 @@ slot_city_01 = {
 
 slot_city_02 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
+	included_zone_sets = {
+		urban
+	}
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -64,6 +68,9 @@ slot_city_02 = {
 
 slot_minerals = {
 	inline_script = zones/allowed_zones_minerals
+	included_zone_sets = {
+		minerals
+	}
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_unavailable_tech_mineral_purification_1
@@ -79,6 +86,9 @@ slot_minerals = {
 
 slot_energy = {
 	inline_script = zones/allowed_zones_energy
+	included_zone_sets = {
+		energy
+	}
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_unavailable_tech_power_hub_1
@@ -94,43 +104,45 @@ slot_energy = {
 
 slot_food = {
 	inline_script = zones/allowed_zones_food
-	#bbt104#
-	inline_script = zones/ad_allowed_zones_farming
-
+	included_zone_sets = {
+		food
+	}
 	unlock = { # planet scope
-	custom_tooltip = {
-		fail_text = zone_unavailable_tech_food_processing_1
-		OR = {
-			AND = {
-				exists = owner
-				owner = { is_anglers_empire = yes }
-				is_wet = yes
-			}
-			AND = {
-				exists = owner
-				owner = {
-					has_valid_civic = civic_agrarian_idyll
+		custom_tooltip = {
+			fail_text = zone_unavailable_tech_food_processing_1
+			OR = {
+				AND = {
+					exists = owner
+					owner = { is_anglers_empire = yes }
+					is_wet = yes
 				}
-			}
-			AND = {
-				exists = owner
-				owner = {
-					has_tech_or_functional_civic = {
-						TECH = tech_food_processing_1
+				AND = {
+					exists = owner
+					owner = {
+						has_valid_civic = civic_agrarian_idyll
+					}
+				}
+				AND = {
+					exists = owner
+					owner = {
+						has_tech_or_functional_civic = {
+							TECH = tech_food_processing_1
+						}
 					}
 				}
 			}
 		}
 	}
-	}
 }
 ##shattered ring
 slot_city_04 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
+	included_zone_sets = {
+		urban
+	}
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -161,10 +173,12 @@ slot_city_04 = {
 ##shattered ring
 slot_city_05 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
+	included_zone_sets = {
+		urban
+	}
 
 	unlock = { # planet scope
 		custom_tooltip = {
@@ -195,21 +209,27 @@ slot_city_05 = {
 ##Ringworld
 slot_rw_urban_01 = {
 	inline_script = zones/allowed_zones_rw
-
+	included_zone_sets = {
+		ring_world
+	}
 	unlock = { # planet scope
 		uses_district_set = ring_world
 	}
 }
 slot_rw_urban_02 = {
 	inline_script = zones/allowed_zones_rw
-
+	included_zone_sets = {
+		ring_world
+	}
 	unlock = { # planet scope
 		uses_district_set = ring_world
 	}
 }
 slot_rw_urban_03 = {
 	inline_script = zones/allowed_zones_rw
-
+	included_zone_sets = {
+		ring_world
+	}
 	unlock = { # planet scope
 		uses_district_set = ring_world
 	}
@@ -217,33 +237,36 @@ slot_rw_urban_03 = {
 ##Arcology
 slot_arcology_urban_01 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		arcology
+	}
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
 }
 slot_arcology_urban_02 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		arcology
+	}
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
 }
 slot_arcology_urban_03 = {
 	inline_script = zones/allowed_zones_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
-	inline_script = zones/ad_allowed_zones_urban
-
+	inline_script = zone/ad_allowed_zones_urban
+	included_zone_sets = {
+		arcology
+	}
 	unlock = { # planet scope
 		uses_district_set = city_world
 	}
@@ -251,21 +274,27 @@ slot_arcology_urban_03 = {
 ##Machine
 slot_nexus_01 = {
 	inline_script = zones/allowed_zones_nexus
-
+	included_zone_sets = {
+		nexus
+	}
 	unlock = { # planet scope
 		uses_district_set = machine_world
 	}
 }
 slot_nexus_02 = {
 inline_script = zones/allowed_zones_nexus
-
+	included_zone_sets = {
+		nexus
+	}
 	unlock = { # planet scope
 		uses_district_set = machine_world
 	}
 }
 slot_nexus_03 = {
 	inline_script = zones/allowed_zones_nexus
-
+	included_zone_sets = {
+		nexus
+	}
 	unlock = { # planet scope
 		uses_district_set = machine_world
 	}
@@ -273,21 +302,27 @@ slot_nexus_03 = {
 ##Hive
 slot_hive_01 = {
 	inline_script = zones/allowed_zones_hive
-
+	included_zone_sets = {
+		hive
+	}
 	unlock = { # planet scope
 		uses_district_set = hive_world
 	}
 }
 slot_hive_02 = {
 	inline_script = zones/allowed_zones_hive
-
+	included_zone_sets = {
+		hive
+	}
 	unlock = { # planet scope
 		uses_district_set = hive_world
 	}
 }
 slot_hive_03 = {
 	inline_script = zones/allowed_zones_hive
-
+	included_zone_sets = {
+		hive
+	}
 	unlock = { # planet scope
 		uses_district_set = hive_world
 	}
@@ -296,8 +331,8 @@ slot_hive_03 = {
 slot_cosmogenesis_government = {
 	start = zone_cosmogenesis_default
 
-	include = {
-		zone_cosmogenesis_default
+	included_zone_sets = {
+		cosmogenesis_default
 	}
 
     potential = { # planet scope
@@ -325,7 +360,9 @@ slot_resort_01 = {
 	inline_script = zones/allowed_zones_resort
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		resort
+	}
 	unlock = { # planet scope
 		always = yes
 	}
@@ -334,7 +371,9 @@ slot_resort_02 = {
 	inline_script = zones/allowed_zones_resort
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		resort
+	}
 	unlock = { # planet scope
 		
 	custom_tooltip = {
@@ -359,7 +398,9 @@ slot_resort_attraction_01 = {
 	inline_script = zones/allowed_zones_resort_attractions
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		resort_attraction
+	}
 	unlock = { # planet scope
 		always = yes
 	}

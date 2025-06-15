@@ -1,10 +1,11 @@
 slot_habitat_01 = {
 	inline_script = zones/allowed_zones_habitat_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		habitat_urban
+	}
 	unlock = { # planet scope
 		always = yes
 	}
@@ -12,11 +13,12 @@ slot_habitat_01 = {
 
 slot_habitat_02 = {
 	inline_script = zones/allowed_zones_habitat_urban
-	#The Wandering Modder#
 	inline_script = zones/allowed_zones_crimelord
 	#BBT104#
 	inline_script = zones/ad_allowed_zones_urban
-
+	included_zone_sets = {
+		habitat_urban
+	}
 	unlock = { # planet scope
 		custom_tooltip = {
 			fail_text = zone_unavailable_tech_habitat_2
@@ -42,7 +44,7 @@ slot_habitat_02 = {
 }
 
 slot_habitat_energy = {
-	include = {
+	included_zone_sets = {
 		zone_energy
 		zone_energy_physics
 		zone_habitat_hydroponics
@@ -72,7 +74,7 @@ slot_habitat_energy = {
 }
 
 slot_habitat_minerals = {
-	include = {
+	included_zone_sets = {
 		zone_minerals
 		zone_minerals_engineering
 	}
@@ -101,14 +103,12 @@ slot_habitat_minerals = {
 }
 
 slot_habitat_research = {
-	include = {
+	included_zone_sets = {
         zone_habitat_research
 		zone_habitat_research_unity
 		zone_research_physics
 		zone_research_society
 		zone_research_engineering
-		#bbt104#
-		zone_ad_bastet
     }
 	unlock = { # planet scope
         custom_tooltip = {
